@@ -1,3 +1,6 @@
+html {
+  overflow-y: scroll;
+}
 
 body {
   height: 100%;
@@ -83,6 +86,7 @@ body {
   color: #222222;
   font-weight: bold;
   white-space: nowrap;
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
 .menu a:hover {
   background-color: rgba(200, 205, 209, 0.6);
@@ -90,10 +94,15 @@ body {
   padding: 0.5rem;
   border-radius: 8px;
 }
+.menu a.active-page {
+  border-radius: 8px;
+  cursor: default;
+  color: #555555;
+}
 
 .welcome {
   position: absolute;
-  top: calc(50% - 100px);
+  top: calc(50% - 60px);
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
@@ -113,6 +122,41 @@ body {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
+}
+
+.container {
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.05);
+}
+.form-image {
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+}
+.form-section {
+  background-color: transparent;
+  padding: 3rem;
+}
+.form-section:nth-child(even) .row {
+  flex-direction: row-reverse;
+}
+.about_text {
+  text-align: center;
+}
+
+.grid-box {
+  background-color: #f4f0f0;
+  border: 2px solid #dfe2e5;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.grid-box:hover {
+  background-color: #c3c8ce;
+}
+.mt-4 {
+  background-color: transparent;
+  padding: 0.25rem 1rem;
 }
 
 @font-face {

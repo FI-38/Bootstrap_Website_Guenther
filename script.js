@@ -13,7 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       links.forEach(link => {
         const linkPage = link.getAttribute("data-page");
-        link.style.display = (linkPage === page) ? "none" : "block";
+        if (linkPage === page) {
+          link.classList.add("active-page");
+          link.removeAttribute("href");
+          link.style.pointerEvents = "none";
+          link.style.opacity = "0.8";
+        } else {
+          link.classList.remove("active-page");
+          link.setAttribute("href", "#");
+          link.style.pointerEvents = "auto";
+          link.style.opacity = "1";
+        }
       });
 
       if (push) {
