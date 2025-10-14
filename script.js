@@ -59,4 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const page = e.state?.page || 'start.html';
     loadPage(page, false);
   });
+
+  const carousel = document.querySelector('#carouselExample');
+  const instance = bootstrap.Carousel.getOrCreateInstance(carousel, {
+    interval: false,
+    ride: false,
+    pause: 'hover'
+  });
 });

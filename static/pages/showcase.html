@@ -1,0 +1,145 @@
+
+<div class="container py-5" data-bs-spy="scroll" data-bs-target="#featureNav" data-bs-offset="0" tabindex="0">
+  <nav id="featureNav" class="navbar sticky-top bg-light p-2 mb-4 rounded">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a class="nav-link" href="#accordion">Accordion</a></li>
+      <li class="nav-item"><a class="nav-link" href="#alerts">Alerts</a></li>
+      <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+      <li class="nav-item"><a class="nav-link" href="#carousel">Carousel</a></li>
+      <li class="nav-item"><a class="nav-link" href="#collapse">Collapse</a></li>
+      <li class="nav-item"><a class="nav-link" href="#dropdown">Dropdown</a></li>
+      <li class="nav-item"><a class="nav-link" href="#modal">Modal</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tabs">Tabs</a></li>
+      <li class="nav-item"><a class="nav-link" href="#offcanvas">Offcanvas</a></li>
+      <li class="nav-item"><a class="nav-link" href="#toast">Toast</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tooltip">Tooltip</a></li>
+    </ul>
+  </nav>
+
+  <!-- Accordion -->
+  <section id="accordion" class="mb-5">
+    <h2>Accordion</h2>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Section 1</button></h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">Inhalt für Abschnitt 1</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Section 2</button></h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">Inhalt für Abschnitt 2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alerts -->
+  <section id="alerts" class="mb-5">
+    <h2>Alerts</h2>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Hinweis!</strong> Dies ist eine Bootstrap-Alert.
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  </section>
+
+  <!-- Buttons -->
+  <section id="buttons" class="mb-5">
+    <h2>Buttons</h2>
+    <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false">Toggle Button</button>
+    <div class="form-check mt-2">
+      <input class="form-check-input" type="checkbox" id="check1">
+      <label class="form-check-label" for="check1">Checkbox</label>
+    </div>
+    <div class="form-check mt-2">
+      <input class="form-check-input" type="radio" name="radioGroup" id="radio1">
+      <label class="form-check-label" for="radio1">Radio</label>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section id="carousel" class="mb-5">
+    <h2>Carousel</h2>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <img src="static/pics/horizont.jpg" alt="Bild 1" class="img-fluid" style="max-width: 800px;"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <img src="static/pics/horizont.jpg" alt="Bild 2" class="img-fluid" style="max-width: 800px;"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+    </div>
+  </section>
+
+  <!-- Collapse -->
+  <section id="collapse" class="mb-5">
+    <h2>Collapse</h2>
+    <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#collapseContent">Toggle Inhalt</button>
+    <div class="collapse mt-2" id="collapseContent">
+      <div class="card card-body">Dieser Inhalt ist collapsible.</div>
+    </div>
+  </section>
+
+  <!-- Dropdown -->
+  <section id="dropdown" class="mb-5">
+    <h2>Dropdown</h2>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Option 1</a></li>
+        <li><a class="dropdown-item" href="#">Option 2</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <section id="modal" class="mb-5">
+    <h2>Modal</h2>
+    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+      <div class="modal-dialog"><div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title">Modal Titel</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+        <div class="modal-body">Das ist der Modal-Inhalt.</div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <section id="tabs" class="mb-5">
+    <h2>Tabs</h2>
+    <ul class="nav nav-tabs" id="tabExample" role="tablist">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">Tab 1</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">Tab 2</button></li>
+    </ul>
+    <div class="tab-content mt-2">
+      <div class="tab-pane fade show active" id="tab1">Inhalt Tab 1</div>
+      <div class="tab-pane fade" id="tab2">Inhalt Tab 2</div>
+    </div>
+  </section>
+
+  <!-- Offcanvas -->
+  <section id="offcanvas" class="mb-5">
+    <h2>Offcanvas</h2>
+    <button class="btn btn-outline-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">Open Offcanvas</button>
+    <div class="offcanvas offcanvas-start" id="offcanvasExample">
+      <div class="offcanvas-header"><h5>Offcanvas Titel</h5><button class="btn-close" data-bs-dismiss="offcanvas"></button></div>
+      <div class="offcanvas-body">Offcanvas-Inhalt hier.</div>
+    </div>
+  </section>
+
+  <!-- Toast -->
+  <section id="toast" class="mb-5">
+    <h2>Toast</h2>
+    <button class="btn btn-success" onclick="bootstrap.Toast.getOrCreateInstance(document.getElementById('liveToast')).show()">Toast anzeigen</button>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header"><strong class="me-auto">Bootstrap</strong><small>Jetzt</small><button class="btn-close" data-bs-dismiss="toast"></button></div>
+        <div class="toast-body">Das ist ein Toast!</
+          

@@ -20,6 +20,7 @@
     <nav class="menu">
       <a href="#" data-page="start.html">Start</a>
       <a href="#" data-page="about.html">Über mich</a>
+      <a href="#" data-page="showcase.html">Bootstrap Showcase</a>
       <a href="#" data-page="test.html">Test</a>
       <a href="#" data-page="kontakt.html">Kontakt</a>
       <a href="#" data-page="impressum.html">Impressum</a>
