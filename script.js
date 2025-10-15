@@ -47,12 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const page = (rawPath === '' || rawPath === 'index.php') ? 'start.html' : `${rawPath}.html`;
   loadPage(page);
 
-  links.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const page = link.getAttribute("data-page");
-      loadPage(page);
-    });
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("[data-page]");
+    if (!link || !link.matches("a"))
+      return;
+    e.preventDefault();
+    const page = link.getAttribute("data-page");
+    loadPage(page);
   });
 
   window.addEventListener("popstate", (e) => {
